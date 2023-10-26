@@ -1,8 +1,10 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { UserButton } from "@clerk/nextjs";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>Nextra Sample Project</span>,
+
   project: {
     link: 'https://github.com/shuding/nextra-docs-template',
   },
@@ -13,6 +15,16 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Nextra Docs Template',
   },
+  themeSwitch: {
+    useOptions() {
+      return {
+        light: 'Light',
+        dark: 'Dark',
+        system: 'System'
+      }
+    }
+  }
+  
 }
 
 export default config
