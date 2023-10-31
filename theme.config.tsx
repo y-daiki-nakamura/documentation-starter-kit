@@ -1,6 +1,5 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import { UserButton } from "@clerk/nextjs";
 
 const config: DocsThemeConfig = {
   logo: <span>Nextra Sample Project</span>,
