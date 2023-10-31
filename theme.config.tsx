@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import AuthComponent from './components/AuthComponent'
 
 const config: DocsThemeConfig = {
   logo: <span>My Project</span>,
@@ -13,6 +14,18 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Nextra Docs Template',
   },
+  themeSwitch: {
+    useOptions() {
+      return {
+        light: 'Light',
+        dark: 'Dark',
+        system: 'System'
+      }
+    }
+  },
+  navbar: {
+    extraContent: <AuthComponent />
+  }
 }
 
 export default config
