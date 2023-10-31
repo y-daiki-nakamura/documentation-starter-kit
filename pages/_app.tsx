@@ -1,4 +1,4 @@
-import 'nextra-theme-blog/style.css'
+import 'nextra-theme-docs/style.css'
 import type { AppProps } from 'next/app'
 import { ClerkProvider } from "@clerk/nextjs";
 
