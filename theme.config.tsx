@@ -25,7 +25,7 @@ const config: DocsThemeConfig = {
   },
   navbar: {
     extraContent: <AuthComponent />
-  }
+  },
 }
 
 export default config
