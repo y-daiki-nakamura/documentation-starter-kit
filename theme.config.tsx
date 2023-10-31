@@ -14,15 +14,6 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Nextra Docs Template',
   },
-  themeSwitch: {
-    useOptions() {
-      return {
-        light: 'Light',
-        dark: 'Dark',
-        system: 'System'
-      }
-    }
-  },
   navbar: {
     extraContent: <AuthComponent />
   },
