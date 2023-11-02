@@ -11,9 +11,22 @@ function AuthComponent() {
 
   if (user) {
     return (
-      <div>
-        {user.name}! <a href="/api/auth/logout">Logout</a>
-      </div>
+      <>
+        <div>
+          <img
+              src={user.picture}
+              alt="Profile"
+              className="nav-user-profile rounded-circle"
+              data-testid="profile-picture"
+              width="50"
+              height="50"
+            />
+        </div>
+        <div>
+          {/* {user.name}!  */}
+          <a href="/api/auth/logout">Logout</a>
+        </div>
+      </>
     );
   }
 
